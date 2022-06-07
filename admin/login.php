@@ -1,4 +1,7 @@
-<?php require("../backend/config.php"); ?>
+<?php require("../backend/config.php"); 
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

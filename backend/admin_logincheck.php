@@ -7,6 +7,11 @@ if (isset($_POST['IdAdmin']) & isset($_POST['Password'])){
     $IdAdmin = VarClean($_POST['IdAdmin']);
     $Password = VarClean($_POST['Password']);
     if (ValidaAdmin($IdAdmin, $Password) == TRUE){
+        session_start();
+        $_SESSION['IdAdmin'] = $IdAdmin; //session		                     
+        $IdAdmin = $_SESSION['IdAdmin'];
+        echo '<script type="text/javascript">top.location.href="index.php"</script>';
+
         Toast("Acceso correcto","Success");
         
     } else {
