@@ -17,4 +17,8 @@ if (function_exists('mysqli_connect')) {
 
 
 
+$ftpHost   = "216.70.82.104";
+$ftpUsername = "TAM1539";
+$ftpPassword = "qBg0iF1eQOpVfPRWXg8o";
+
 ?>
